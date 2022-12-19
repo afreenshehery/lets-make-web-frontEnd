@@ -1,0 +1,181 @@
+<div class="fullpage">
+  <h1 class="h1">Users</h1>
+  <form (submit)="search(signupForm)" #signupForm="ngForm">
+    <!-- <mat-label>Search</mat-label> -->
+
+    <input
+      matInput
+      type="text"
+      name="Name"
+      ngModel
+      placeholder="Search"
+      #dobInput="ngModel"
+      style="margin-left: 17%; width: 50%"
+    />
+    <button class="btn btn1" type="submit">Search</button>
+  </form>
+
+  <!-- .................. -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Edit</th>
+        <th scope="col">delete</th>
+        <th scope="col">projects</th>
+        <th class="btn btn1" order="order" (click)="desendin(order)">DES</th>
+
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Admin of store">
+        <td>{{ Admin.id }}</td>
+        <td>{{ Admin.Name }}</td>
+        <td>{{ Admin.LastName }}</td>
+        <td>{{ Admin.Email }}</td>
+        <td>{{ Admin.Password }}</td>
+
+        <td class="btn-link" [routerLink]="['/singUpEdite', Admin.id]">Edit</td>
+        <td>
+          <button
+            style="
+              border: none;
+              background-color: #34495e;
+              color: white;
+              border-radius: 6%;
+            "
+            [routerLink]="['/routeName']"
+            (click)="getProject(Admin.id)"
+          >
+            Project
+          </button>
+        </td>
+
+        <td class="btn" (click)="deleteuser(Admin.id)">delete</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- | paginate: { itemsPerPage: limit, currentPage: p };
+        let i = index -->
+  <!-- <div class="text-right" style="margin-left: 20%">
+  <pagination-controls
+    (pageChange)="page = $event"
+    (click)="onChangePage(page)"
+  ></pagination-controls>
+</div> -->
+
+  <div>
+    <div *ngIf="showProject">
+      <h1 class="h1">Projects</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Website</th>
+            <th scope="col">Slote</th>
+            <th scope="col">discription</th>
+
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let Admin of projectInfo">
+          <tr>
+            <td>{{ Admin.userId }}</td>
+            <td>{{ Admin.website }}</td>
+            <td>{{ Admin.slote }}</td>
+            <td>{{ Admin.discription }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="noprojectFound">
+      <h1 style="text-align: center">
+        no project found <br /><i
+          class="far fa-frown"
+          style="font-size: 38px; color: red"
+        ></i>
+      </h1>
+    </div>
+  </div>
+  <!-- <div class="pagination1">
+    <nav aria-label="Page navigation example" *ngIf="!showNextPage">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link pree">Previous</a></li>
+        <li class="page-item">
+          <a class="page-link a" (click)="page1(1)">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link a" (click)="page1(2)">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link a" (click)="page1(3)">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link next" (click)="pagechange()">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <nav aria-label="Page navigation example " *ngIf="showNextPage">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link pree" (click)="prepagechange()">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link a" (click)="page1(4)">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link a" (click)="page1(5)">5</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link a" (click)="page1(6)">6</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link next" (click)="pagechange()">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <div class="row">
+    <div class="col d-flex">
+      <div class="form-inline">
+        salect list per page
+        <select
+          class="form-select"
+          value="limit"
+          (change)="changePageSize($event)"
+        >
+          <option selected>Default page</option>
+          <option value="2">2 PER PAGE</option>
+          <option value="4">4 PER PAGE</option>
+          <option value="8">8 PER PAGE</option>
+        </select>
+      </div>
+      <div class="btn-group float-right">
+        <button
+          style="height: 40px; margin-top: 20px"
+          class="btn btn-outline-primary col"
+          *ngFor="let page of array"
+          (click)="changePage(page)"
+        >
+          {{ page }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="btn-group float-right">
+    <button
+      class="btn btn-outline-primary"
+      *ngFor="let page of array"
+      (click)="changePage(page)"
+    >
+      {{ page }}
+    </button>
+  </div> -->
+</div>

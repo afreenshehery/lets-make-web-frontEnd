@@ -1,0 +1,78 @@
+<div class="page">
+  <h1 class="baground-color :primary">signUp</h1>
+
+  <mat-card>
+    <form (submit)="onSignup(signupForm)" #signupForm="ngForm">
+      <mat-form-field>
+        <input
+          matInput
+          required
+          Name
+          name="Name"
+          [ngModel]="userInfo?.Name"
+          type="text"
+          placeholder="Name"
+          #Name="ngModel"
+        />
+        <mat-error *ngIf="Name.invalid">Please enter a valid emial.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          required
+          LastName
+          name="LastName"
+          [ngModel]="userInfo?.LastName"
+          type="email"
+          placeholder="LastName"
+          #LastName="ngModel"
+        />
+        <mat-error *ngIf="LastName.invalid"
+          >Please enter a valid emial.</mat-error
+        >
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          required
+          Email
+          name="Email"
+          [ngModel]="userInfo?.Email"
+          type="email"
+          placeholder="Email or Phone number"
+          #Email="ngModel"
+        />
+        <mat-error *ngIf="Email.invalid">Please enter a valid emial.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          type="text"
+          required
+          Password
+          name="Password"
+          [ngModel]="userInfo?.Password"
+          matInput
+          placeholder="Password"
+          #Password="ngModel"
+        />
+        <mat-error *ngIf="Password.invalid"
+          >Please enter a valid emial.</mat-error
+        >
+      </mat-form-field>
+
+      <button
+        class="login"
+        mat-raised-button
+        type="submit"
+        *ngIf="activeSignUp"
+      >
+        sigUp
+      </button>
+      <button class="login" mat-raised-button type="submit" *ngIf="activeEdit">
+        Save
+      </button>
+    </form>
+  </mat-card>
+</div>

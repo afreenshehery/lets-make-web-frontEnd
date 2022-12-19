@@ -1,0 +1,46 @@
+input{
+      border: solid 3px #34495E;
+      height: 32px;
+      margin: 2px;
+      border-radius: 10px;
+      background: transparent;
+}
+
+.btn1{
+     background-color:#34495E; 
+     color: antiquewhite;
+     text-align: center;
+     height: 30px;
+     font-family: 'Vollkorn', serif;
+}
+
+h1{
+      text-align: center;
+      color:#34495E; 
+      font-family: 'Vollkorn', serif;
+}
+
+table{
+      font-family: 'Vollkorn', serif;   
+}
+.pagination1{
+     margin-left: 30%;
+     margin-top: 30px;
+     
+}
+.pagination .a{
+      border: solid 1px #34495E;
+     color: #34495E; 
+}
+.next{
+      background-color: #34495E;
+      color: aliceblue;
+}
+.pree{
+      background-color: #34495E;
+      color: aliceblue; 
+}
+.fullpage{
+      height: 90%;
+      background-color: #e3f2fd;
+}

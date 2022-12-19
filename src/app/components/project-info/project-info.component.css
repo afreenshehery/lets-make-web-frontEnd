@@ -1,0 +1,75 @@
+.fullPage{
+      padding-top:2%;
+      padding-left: 2%;
+      background-color:#e3f2fd ;
+   
+    
+}
+
+.page{
+   width: 12rem;
+   
+   
+
+}
+mat-radio-button{
+      font-family: 'Vollkorn', serif;
+      margin: 2px;
+}
+
+.img{
+      height: 20rem;
+      width: 100%;
+ 
+     
+      
+}
+.text {
+      padding-top: 9%;
+      
+      background-color: aqua;
+      text-align:center;
+     
+}
+.text h1{
+      
+      font-size: 2rem;
+      font-family: 'Kalam', cursive;  
+}
+
+.bg-img{
+     
+    background-position: center;
+    background-size: cover;
+      background-image: url("../../../assets/appointment-scheduling-blog-810x405.png");
+      background-repeat: repeat-y;
+}
+
+textarea{
+      font-family: 'Vollkorn', serif;
+      width: 40%;
+      border-radius: 2%;
+      border-color: solid 3px #34495E;
+}
+.login{
+      font-family: 'Vollkorn', serif;
+      color: white;
+background-color:#34495E ;
+}
+#example-radio-group-label{
+      font-family: 'Vollkorn', serif; 
+      font-size: 19px;  
+}
+p{
+      font-family: 'Vollkorn', serif;       
+}
+mat-option{
+   
+      font-family: 'Vollkorn', serif;      
+}
+mat-select{
+      
+      font-size: 16px;
+}
+
+

@@ -1,0 +1,65 @@
+<div class="img row">
+  <div class="text col">
+    <h1>Book your Slote...</h1>
+  </div>
+
+  <div class="bg-img col"></div>
+</div>
+
+<div class="fullPage">
+  <label id="example-radio-group-label"> Select type of website </label>
+  <div class="page">
+    <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+      [(ngModel)]="favoriteSeason"
+      ><br />
+      <mat-radio-button
+        class="example-radio-button"
+        *ngFor="let season of seasons"
+        [value]="season"
+        (click)="OnClick(season)"
+      >
+        {{ season }}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <br />
+  <br />
+  <form (submit)="onSignup(signupForm)" #signupForm="ngForm">
+    <label id="example-radio-group-label">
+      <mat-form-field appearance="fill"
+        ><p>Select Slote</p>
+        <mat-select [(value)]="selected">
+          <mat-option value="Morning"
+            ><p>Morning Slote(9:00 Am -1:00 pm)</p></mat-option
+          >
+          <mat-option value="AfterNoon"
+            >AfterNoon Slote(2:00 pm-5:00 pm)</mat-option
+          >
+          <mat-option value="AfterNoon"
+            >AfterNoon Sloate(6:00 pm-9:00 pm)</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <br />
+
+      Discroption(optional)
+    </label>
+    <br />
+    <textarea
+      rows="4"
+      cols="50"
+      ngModel
+      name="comment"
+      form="usrform"
+      #comment="ngModel"
+      placeholder=" Enter text here..."
+    ></textarea>
+    <br />
+
+    <br />
+    <button class="login" mat-raised-button type="submit">save</button>
+  </form>
+</div>

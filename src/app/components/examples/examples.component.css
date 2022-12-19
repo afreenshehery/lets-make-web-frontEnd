@@ -1,0 +1,36 @@
+
+
+.examples{
+      margin-top: 10rem;
+      /* height: 50rem; */
+      
+      text-align: center;
+      font-family: 'Vollkorn', serif;
+     
+}
+.examples p{ 
+/* text-decoration; */
+      /* font-size: 20px; */
+      color:darkslategrey;
+      margin-top: 6rem;
+      font-size: 20px;
+      font-family: 'Vollkorn', serif;
+      
+     
+/* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.examples h1{
+      color:darkslategrey;
+      /* text-decoration: dashed; */
+      /* margin-bottom: 3rem; */
+      /* text-decoration:dashed; */
+      
+}
+
+img{
+      width: 90%;
+      /* margin: 15%; */
+      /* content: calc(); */
+align-self: center;
+}

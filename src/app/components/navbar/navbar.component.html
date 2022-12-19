@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+  <div class="container-fluid">
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"
+        ><i class="fa fa-chevron-left" aria-hidden="true"></i
+      ></span>
+    </button> -->
+
+    <a class="navbar-brand" href="#">makeWeb.com</a>
+
+    <div class="button">
+      <!-- <button
+        type="button"
+        class="btn btn-light"
+        style="background: transparent"
+      >
+        Contact Us
+      </button> -->
+      <button type="button" class="btn btn1" [routerLink]="['/login']">
+        log In
+      </button>
+      <button type="button" class="btn btn1" [routerLink]="['/singUp']">
+        <a></a> Register
+      </button>
+      <button class="usericon" [routerLink]="['/user']">
+        <i class="fas fa-user-circle" style="font-size: 26px"></i>
+      </button>
+    </div>
+  </div>
+</nav>

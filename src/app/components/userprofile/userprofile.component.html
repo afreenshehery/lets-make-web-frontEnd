@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">projects</th>
+
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let Admin of storeUser">
+    <tr *ngFor="let item of storeProject">
+      <!-- <td>{{ Admin.id }}</td> -->
+      <td>{{ Admin.Name }}</td>
+      <td>{{ Admin.LastName }}</td>
+      <td>{{ Admin.Email }}</td>
+      <td>{{ Admin.Password }}</td>
+      <!-- <td>
+        {{ item.website }}
+        <br />
+        {{ item.slote }}
+      </td> -->
+      <td class="btn-link" [routerLink]="['/singUpEdite', Admin.id]">Edit</td>
+
+      <td></td>
+    </tr>
+  </tbody>
+</table>

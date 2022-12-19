@@ -1,0 +1,30 @@
+nav{
+      height: 5rem;
+      font-family: 'Kalam', cursive;  
+   
+}
+.collapse{
+      margin-right: 3rem;
+}
+
+/* .home{
+      float: left;
+} */
+
+/* .nav-link{
+      margin: 2rem;
+} */
+
+.btn-dark{
+      width: 5rem;
+}
+.btn{
+      margin: 5px;
+}
+.usericon{
+border: none;
+background: transparent;
+}
+
+      /* font-family: 'Kalam', cursive;   */
+         /* font-size: 39px;  */

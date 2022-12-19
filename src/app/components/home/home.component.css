@@ -1,0 +1,160 @@
+
+
+.coverImage{
+      width: 100%;
+      height:  100%;
+}
+.main{
+      height: 40rem;
+      /* margin-top: 20px; */
+      font-family: 'Vollkorn', serif;
+      z-index: -1;
+      background-image: url('/assets/pexels-photo-325185.webp');
+}
+
+.main h1{
+      text-align:center;
+      font-family: 'Vollkorn', serif;
+      
+   
+      
+}
+
+h2{
+      text-align:center;    
+      padding-top: 9%;
+      font-size: 4rem;
+
+
+}
+.Social-medea-icons{
+      text-align: center;
+   
+}
+.Social-medea-icons a{
+margin-left: 2%;
+font-size: 1.5rem;
+text-decoration: none;
+}
+
+
+
+.card1{
+      margin-top: 2rem;
+ 
+}
+.middler{
+      height:25rem;
+      background-color: #34495E;
+      margin-top: 2%;
+     
+}
+.middler h1{
+      font-family: 'Vollkorn', serif;
+      color: white;
+      /* font-size: 3%; */
+      text-align: center;
+      padding-top: 4.4%;
+
+}
+.middler p{
+      font-size:21px;
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: beige;
+     
+
+
+}
+
+
+
+
+
+.app2  {
+      
+  
+      color: aliceblue;
+      text-align: center;
+      
+      border-radius: 2%;
+       
+}
+
+
+.app2 h1{
+      font-family: 'Kalam', cursive;
+      font-size: 2.1rem;
+}
+.app1 .card{
+border-radius: 2%;
+margin-top: 4rem;
+margin-left: 12%;
+
+
+}
+
+.app2 h1{
+      
+      color: black;
+      padding-top:27% ;
+
+}
+.row1{
+/* height: 10rem; */
+
+background-color: gold;
+
+}
+
+.card{
+height: 85%;
+margin: 0.6rem;
+
+}
+
+
+.row1 .card{
+      height: 12rem;
+      margin: 0.6rem;
+      width: 14rem;
+      margin: 6%;
+      
+      }
+
+
+.card .card-title{
+   
+      font-family: 'Vollkorn', serif;
+      }
+
+      .card p{
+          
+             font-size: 16px;
+            }
+
+            .card a{
+                  /* height: 12rem; */
+                  /* margin-top: 40px; */
+                  background-color: #34495E;
+                  color: aliceblue;
+                   text-align: center;
+                  
+                  }
+                  
+                  .card .Social-medea-icons .btn{
+                        /* height: 12rem; */
+                        /* margin-top: 40px; */
+                        /* background-color: #34495E; */
+                         text-align: center;
+                        
+                        }
+                        .card .sam {
+                              /* height: 12rem; */
+                              margin-bottom: 10px;
+                              background-color: #34495E;
+                              color: aliceblue;
+                               text-align: center;
+                              
+                              }
